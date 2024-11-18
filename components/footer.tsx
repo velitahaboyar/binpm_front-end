@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import { Cigarette, CigaretteOff, CommandIcon, HeartIcon, TriangleIcon } from "lucide-react";
+import {
+  Cigarette,
+  CigaretteOff,
+  CommandIcon,
+  HeartIcon,
+  TriangleIcon,
+} from "lucide-react";
 import { Logo } from "./navbar";
 
 export function Footer() {
@@ -16,6 +22,13 @@ export function Footer() {
               href="https://github.com/nisabmohd"
             >
               nisabmohd
+            </Link>
+            . Modified by{" "}
+            <Link
+              className="px-1 underline underline-offset-2"
+              href="https://github.com/velitahaboyar"
+            >
+              velitahaboyar
             </Link>
             . The source code is available on{" "}
             <Link
@@ -43,8 +56,8 @@ export function FooterButtons() {
         href=""
         className={buttonVariants({ variant: "outline", size: "sm" })}
       >
-        <CigaretteOff className="h-[0.8rem] w-4 mr-2 text-primary fill-current" />
-		Binpm
+        <TriangleIcon className="h-[0.8rem] w-4 mr-2 text-primary fill-current" />
+        Binpm
       </Link>
     </>
   );
